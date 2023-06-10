@@ -1,6 +1,6 @@
 //your code here
 let bandNames = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-let ans = bandNames.map(band);
+let ans = bandNames.map(band).sort();
 let ul = document.getElementById("band");
 for (let x of ans){
 	let li = document.createElement("li");
