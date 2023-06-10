@@ -1,8 +1,11 @@
 //your code here
 let bandNames = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 let ans = bandNames.map(band);
+let ul = document.getElementById("band");
 for (let x of ans){
-	document.getElementById('band').innerHtml = <li>x</li>;
+	let li = document.createElement("li");
+	li.appendChild(document.createTextNode(x));
+	ul.appendChild(li);
 }
 
 function band(element) {
